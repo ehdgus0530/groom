@@ -29,8 +29,10 @@ function calendar() {
 	location.href = "plan.pl?kind=calendar";
 }
 
+
 function home() {
 	location.href="index.jsp";
+
 }
 
 

@@ -42,15 +42,6 @@ public class qa_dao {
 			// TODO Auto-generated catch block
 			System.out.println("qa 테이블 실패");
 			e.printStackTrace();
-		}finally {
-			try {
-				conn.close();
-				rs.close();
-				ptmt.close();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
 		
 		return null;
@@ -71,18 +62,10 @@ public class qa_dao {
 			ptmt.setString(7, data.getQa_file());
 			ptmt.setString(8, data.getQa_comment());
 			ptmt.executeUpdate();
+			ptmt.close();
 		}catch(SQLException e) {
 			System.out.println("게시판 글 저장 실패");
 			e.printStackTrace();
-		}finally {
-			try {
-				conn.close();
-				rs.close();
-				ptmt.close();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
 	}
 	public ArrayList<qa> All_select(){
