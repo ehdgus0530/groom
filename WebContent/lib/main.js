@@ -24,7 +24,7 @@ function user_ck(id) {
 		location.href="plan.pl";
 		alert=("로그인 후 이용해주세요.");
 	}else{
-		location.href= "member/login.jsp";
+		location.href= "login.do?kind=login";
 	}
 }
 
