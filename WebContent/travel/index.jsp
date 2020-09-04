@@ -7,7 +7,7 @@
 	<div id='title'>T&nbsp;r&nbsp;a&nbsp;v&nbsp;e&nbsp;l</div>
 	<div id='middle'>
 		<button id='top' onclick='tr_list()'>Travel&nbsp;Planner</button>
-		<button id='left' onclick='location.href="../reserve/"'>Reserve</button>
-		<button id='right' onclick='location.href=""'>Diary</button>
+		<button id='left' onclick='location.href="reserve/index.jsp"'>Reserve</button>
+		<button id='right' onclick='location.href="travel/diary.jsp"'>Diary</button>
 	</div>
 </div>
