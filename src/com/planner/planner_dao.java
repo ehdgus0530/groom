@@ -36,6 +36,15 @@ public class planner_dao {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+				rs.close();
+				ptmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		return 1;
 	}
@@ -52,10 +61,18 @@ public class planner_dao {
 			ptmt.setInt(4, bdata.getBk_check());
 			ptmt.setString(5, bdata.getBk_writer());
 			ptmt.executeUpdate();
-			ptmt.close();
 		} catch (SQLException e) {
 			System.out.println("버킷리스트 글 저장 실패");
 			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+				rs.close();
+				ptmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 
@@ -77,6 +94,15 @@ public class planner_dao {
 			// TODO Auto-generated catch block
 			System.out.println("bucket 테이블 실패");
 			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+				rs.close();
+				ptmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		return null;
 	}
@@ -93,6 +119,15 @@ public class planner_dao {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+				rs.close();
+				ptmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		return 1;
 	}
@@ -111,10 +146,18 @@ public class planner_dao {
 			ptmt.setString(4, sdata.getScd_content());
 			ptmt.setString(5, sdata.getScd_writer());
 			ptmt.executeUpdate();
-			ptmt.close();
 		} catch (SQLException e) {
 			System.out.println("스케쥴러 글 저장 실패");
 			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+				rs.close();
+				ptmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 
@@ -137,6 +180,15 @@ public class planner_dao {
 			// TODO Auto-generated catch block
 			System.out.println("scheduler 테이블 실패");
 			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+				rs.close();
+				ptmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		return null;
 	}
@@ -153,6 +205,15 @@ public class planner_dao {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+				rs.close();
+				ptmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		return 1;
 	}
@@ -170,10 +231,18 @@ public class planner_dao {
 			ptmt.setDate(4, (Date) cdata.getCal_date());
 			ptmt.setString(5, cdata.getCal_writer());
 			ptmt.executeUpdate();
-			ptmt.close();
 		} catch (SQLException e) {
 			System.out.println("캘린더 글 저장 실패");
 			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+				rs.close();
+				ptmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 	}
 
@@ -195,6 +264,15 @@ public class planner_dao {
 			// TODO Auto-generated catch block
 			System.out.println("calendar 테이블 실패");
 			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+				rs.close();
+				ptmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		return null;
 	}

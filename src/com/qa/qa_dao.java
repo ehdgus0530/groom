@@ -104,6 +104,15 @@ public class qa_dao {
 		}catch(SQLException e) {
 			System.out.println("게시판 DB 오류");
 			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+				rs.close();
+				ptmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		
 		return null;
@@ -119,6 +128,15 @@ public class qa_dao {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+				rs.close();
+				ptmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		return 1;
 	}
@@ -132,6 +150,15 @@ public class qa_dao {
 			}
 		}catch(SQLException e) {
 			e.printStackTrace();
+		}finally {
+			try {
+				conn.close();
+				rs.close();
+				ptmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		return 0;
 	}
