@@ -13,6 +13,7 @@ public class travel_dao {
 	private Connection conn;
 	private ResultSet rs;
 	private PreparedStatement ptmt;
+	private Statement stmt ;
 
 	public travel_dao() {
 		try {
@@ -39,7 +40,7 @@ public class travel_dao {
 		} finally {
 			try {
 				conn.close();
-				ptmt.close();
+				stmt.close();
 				rs.close();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block

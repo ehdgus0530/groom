@@ -15,6 +15,7 @@ public class planner_dao {
 	private Connection conn;
 	private ResultSet rs;
 	private PreparedStatement ptmt;
+	private Statement stmt ;
 
 	public planner_dao() {
 		try {
@@ -28,7 +29,7 @@ public class planner_dao {
 	// 버킷리스트 넘버값
 	private int get_maxnum() {
 		String sql = "select Max(num) as m from bucket";
-		Statement stmt = null;
+		
 
 		try {
 			stmt = conn.createStatement();
@@ -42,7 +43,7 @@ public class planner_dao {
 		} finally {
 			try {
 				conn.close();
-				ptmt.close();
+				stmt.close();
 				rs.close();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
@@ -83,7 +84,7 @@ public class planner_dao {
 	public ArrayList<bucket> Allselect_bucket(String id) {
 		ArrayList<bucket> data = new ArrayList<bucket>();
 		String sql = "select * from bucket  where bk_writer = '" + id + "' order by num desc";
-		Statement stmt = null;
+	
 		try {
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(sql);
@@ -100,7 +101,7 @@ public class planner_dao {
 		} finally {
 			try {
 				conn.close();
-				ptmt.close();
+				stmt.close();
 				rs.close();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
@@ -113,7 +114,7 @@ public class planner_dao {
 	// 스케쥴 넘버값
 	private int get_maxnum2() {
 		String sql = "select Max(num) as m from scheduler";
-		Statement stmt = null;
+	
 
 		try {
 			stmt = conn.createStatement();
@@ -127,7 +128,7 @@ public class planner_dao {
 		} finally {
 			try {
 				conn.close();
-				ptmt.close();
+				stmt.close();
 				rs.close();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
@@ -171,7 +172,7 @@ public class planner_dao {
 		Map<String, String> scd_page = new HashMap<String, String>();
 
 		String sql = "select * from scheduler where scd_writer = '" + id + "' order by num desc";
-		Statement stmt = null;
+
 
 		try {
 			stmt = conn.createStatement();
@@ -189,7 +190,7 @@ public class planner_dao {
 		} finally {
 			try {
 				conn.close();
-				ptmt.close();
+				stmt.close();
 				rs.close();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
@@ -202,7 +203,7 @@ public class planner_dao {
 	// 캘린더 넘버값
 	private int get_maxnum1() {
 		String sql = "select Max(num) as m from calendar";
-		Statement stmt = null;
+	
 
 		try {
 			stmt = conn.createStatement();
@@ -216,7 +217,7 @@ public class planner_dao {
 		} finally {
 			try {
 				conn.close();
-				ptmt.close();
+				stmt.close();
 				rs.close();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
@@ -258,8 +259,7 @@ public class planner_dao {
 	public ArrayList<calendar> Allselect_calendar(String id) {
 		ArrayList<calendar> data = new ArrayList<calendar>();
 		String sql = "select * from calendar order by num desc";
-		Statement stmt = null;
-
+	
 		try {
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery(sql);
@@ -276,7 +276,7 @@ public class planner_dao {
 		} finally {
 			try {
 				conn.close();
-				ptmt.close();
+				stmt.close();
 				rs.close();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block

@@ -11,6 +11,7 @@ public class member_dao {
 	private Connection conn;
 	private ResultSet rs;
 	private PreparedStatement ptmt;
+	private Statement stmt ;
 	
 	public member_dao(){
 		try {
@@ -22,7 +23,6 @@ public class member_dao {
 	}
 	private int get_maxnum() {
 		String sql ="select Max(num) as m from member";
-		Statement stmt = null;
 		
 		try {
 			stmt = conn.createStatement();
@@ -36,7 +36,7 @@ public class member_dao {
 		} finally {
 			try {
 				conn.close();
-				ptmt.close();
+				stmt.close();
 				rs.close();
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block

@@ -5,14 +5,17 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.sql.Timestamp;
 import java.util.ArrayList;
+
 
 public class qa_dao {
 
 	private Connection conn;
 	private ResultSet rs;
 	private PreparedStatement ptmt;
+	private Statement stmt ;
 	
 	
 	public qa_dao(){

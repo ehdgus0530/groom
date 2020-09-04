@@ -15,7 +15,6 @@ public class planner_service {
 		scheduler sdata;
 
 		// 메인 화면 ?? 버킷 어레이 리스트??
-		
 		if(kind==null) {
 			String id = (String) request.getSession().getAttribute("id");
 			ArrayList<bucket> list1 = pd.Allselect_bucket(id);
