@@ -1,6 +1,8 @@
 package com.planner;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,18 +14,21 @@ public class planner_hnd implements main_handler{
 	
 	@Override
 	public String action(HttpServletRequest request, HttpServletResponse response) {
+		Map<String,String> view_page = new HashMap<String,String>();
+		view_page.put("bucket","bucket.jsp");
+		view_page.put(null,"index.jsp");
+		view_page.put("scheduler","scheduler.jsp");
+		view_page.put("scd_set","index.jsp");
+		view_page.put("calendar","calendar.jsp");
+		
 		String kind = request.getParameter("kind");
-		String view = "index.jsp";
-		if(kind==null){
-			ps.select_method(kind, request);
-			view = "planner/index.jsp";
-		}
-		else if(kind.equals("bucket")) {
-			ps.select_method(kind, request);
-			view = "planner/bucket.jsp";
-		}
-		else if(kind.equals("bk_save")) {
-			ps.select_method(kind, request);
+		String view = "planner/"+view_page.get(kind);
+		
+		
+		System.out.println(view_page.get(kind));
+		ps.select_method(kind, request);
+		
+		if(kind!=null&&kind.equals("bk_save")) {
 			view = null;
 			try {
 				response.sendRedirect("bk.pl?kind=bucket");
@@ -32,21 +37,6 @@ public class planner_hnd implements main_handler{
 				e.printStackTrace();
 			}
 		}
-		else if(kind.equals("scheduler")) {
-			view = "planner/scheduler.jsp";
-			ps.select_method(kind, request);
-		}
-		else if(kind.equals("scd_set")) {
-			System.out.println("핸들러 정상");
-			
-			ps.select_method(kind, request);
-		}
-		
-		else if(kind.equals("calendar")) {
-			view = "planner/calendar.jsp";
-			ps.select_method(kind, request);
-		}
-		
 		return view;
 	}
 	

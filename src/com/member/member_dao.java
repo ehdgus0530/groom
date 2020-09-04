@@ -5,6 +5,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class member_dao {
 	private Connection conn;
@@ -21,24 +22,17 @@ public class member_dao {
 	}
 	private int get_maxnum() {
 		String sql ="select Max(num) as m from member";
+		Statement stmt = null;
+		
 		try {
-			ptmt = conn.prepareStatement(sql);
-			rs = ptmt.executeQuery(sql);
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(sql);
 			if(rs.next()) {
 				return rs.getInt("m")+1;
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally {
-			try {
-				conn.close();
-				rs.close();
-				ptmt.close();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
 		return 1;
 	}
@@ -56,25 +50,17 @@ public class member_dao {
 			ptmt.setString(7, temp.getUser_phone());
 			ptmt.setString(8, temp.getUser_email());
 			ptmt.executeUpdate();
+			ptmt.close();
 			return true;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			System.out.println("회원가입 DB 저장 실패");
 			e.printStackTrace();
-		}finally {
-			try {
-				conn.close();
-				rs.close();
-				ptmt.close();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
 		return false;
 	}
 	public boolean login_db(String id, String pw) {
-		String sql=" select * from member where id=? and pw=?";
+		String sql=" select * from member where id=? and pw=?";		
 		try {
 			ptmt = conn.prepareStatement(sql);
 			ptmt.setString(1, id);
@@ -86,15 +72,6 @@ public class member_dao {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally {
-			try {
-				conn.close();
-				rs.close();
-				ptmt.close();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
 		return false;
 	}

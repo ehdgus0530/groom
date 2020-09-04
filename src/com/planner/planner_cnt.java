@@ -85,6 +85,7 @@ public class planner_cnt extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 
 		String view = "index.jsp";
+		
 		try {
 			System.out.println("컨트롤러 정상");
 			view = hnd.action(request, response);
@@ -92,6 +93,7 @@ public class planner_cnt extends HttpServlet {
 			System.out.println("planner 핸들러 클래스 action 메소드 오류");
 			e.printStackTrace();
 		}
+		
 		if(view!=null) {
 			RequestDispatcher dps = request.getRequestDispatcher(view);
 			dps.forward(request, response);

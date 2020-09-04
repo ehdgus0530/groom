@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+#wrap {
+	width: 1200px;
+	height: 1000px;
+	background: #DBEEF4;
+	margin: 0 auto;
+}
+
+#title {
+	position: relative;
+	font-size: 44pt;
+	text-align: center;
+	top: 50px;
+	font-weight: 600;
+}
+
+#middle {
+	left: 1030px; position : relative;
+	margin-top: 100px;
+	margin-bottom: 10px;
+	width: auto;
+	height: auto;
+	position: relative;
+}
+
+#middle input {
+	width: 160px;
+}
+
+#calender {
+	width: 1200px;
+	height: auto;
+}
+
+
+
+table tr td{
+	width: 163px;
+	height: 100px;
+	border : 1px solid black;
+	text-align: center;
+}
+
+table tr td a:link {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+
+table tr td a:hover {
+	font-size: 24px;
+}
+
+#button {
+	width: 1200px;
+	height: 50px;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 24pt;
+	font-weight:bold;
+	margin-left: 345px;
+}
+
+#button a:link {
+	text-decoration: none;
+	color: black;
+}
+
+#button a:hover {
+	text-decoration: none;
+	color: blue;
+}
+
+.c_button {
+	width: 250px;
+	float: left;
+	outline: 1px solid black;
+	margin-right: 10px;
+}
+
+.c1_button {
+    width: 100px;
+    outline: 1px solid black;
+    margin-left: 200px;
+}

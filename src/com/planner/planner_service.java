@@ -15,6 +15,7 @@ public class planner_service {
 		scheduler sdata;
 
 		// 메인 화면 ?? 버킷 어레이 리스트??
+		
 		if(kind==null) {
 			String id = (String) request.getSession().getAttribute("id");
 			ArrayList<bucket> list1 = pd.Allselect_bucket(id);
@@ -28,7 +29,7 @@ public class planner_service {
 			HashMap<String, String> scd_page = (HashMap<String, String>)pd.Allselect_scheduler(id);
 			request.setAttribute("scd_content", scd_page);
 		}
-
+		
 		// 스케쥴러 저장 시에 동작
 		else if (kind.equals("scd_set")) {
 			System.out.println("서비스 정상");
@@ -44,7 +45,7 @@ public class planner_service {
 			ArrayList<bucket> list = pd.Allselect_bucket(id);
 			request.setAttribute("list", list);
 		}
-
+		
 		// 버킷 리스트 글쓰기 저장 시에 동작
 		else if (kind.equals("bk_save")) {
 			String id = (String) request.getSession().getAttribute("id");

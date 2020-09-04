@@ -6,6 +6,7 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class travel_dao {
 
@@ -24,24 +25,17 @@ public class travel_dao {
 
 	private int get_maxnum_air() {
 		String sql = "select Max(num) as m from air";
+		Statement stmt = null;
+		
 		try {
-			ptmt = conn.prepareStatement(sql);
-			rs = ptmt.executeQuery(sql);
+			stmt = conn.createStatement();
+			rs = stmt.executeQuery(sql);
 			if (rs.next()) {
 				return rs.getInt("m") + 1;
 			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} finally {
-			try {
-				conn.close();
-				rs.close();
-				ptmt.close();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
 		return 1;
 	}
@@ -66,20 +60,12 @@ public class travel_dao {
 			ptmt.setString(13, air_data.airline_code);
 			ptmt.setString(14, air_data.flight_code);
 			ptmt.executeUpdate();
+			ptmt.close();
 			return true;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			System.out.println("항공 예약 DB 저장 실패");
 			e.printStackTrace();
-		} finally {
-			try {
-				conn.close();
-				rs.close();
-				ptmt.close();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
 		}
 		return false;
 	}
