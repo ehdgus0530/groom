@@ -33,6 +33,15 @@ public class member_dao {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally {
+			try {
+				conn.close();
+				ptmt.close();
+				rs.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		return 1;
 	}
@@ -50,12 +59,20 @@ public class member_dao {
 			ptmt.setString(7, temp.getUser_phone());
 			ptmt.setString(8, temp.getUser_email());
 			ptmt.executeUpdate();
-			ptmt.close();
 			return true;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			System.out.println("회원가입 DB 저장 실패");
 			e.printStackTrace();
+		} finally {
+			try {
+				conn.close();
+				ptmt.close();
+				rs.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		return false;
 	}
@@ -72,6 +89,15 @@ public class member_dao {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally {
+			try {
+				conn.close();
+				ptmt.close();
+				rs.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		return false;
 	}
