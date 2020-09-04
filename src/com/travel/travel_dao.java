@@ -33,6 +33,15 @@ public class travel_dao {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} finally {
+			try {
+				conn.close();
+				rs.close();
+				ptmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		return 1;
 	}
@@ -57,12 +66,20 @@ public class travel_dao {
 			ptmt.setString(13, air_data.airline_code);
 			ptmt.setString(14, air_data.flight_code);
 			ptmt.executeUpdate();
-			ptmt.close();
 			return true;
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			System.out.println("항공 예약 DB 저장 실패");
 			e.printStackTrace();
+		} finally {
+			try {
+				conn.close();
+				rs.close();
+				ptmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 		}
 		return false;
 	}
