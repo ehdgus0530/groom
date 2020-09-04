@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+#content {
+	width: 1200px;
+	height: auto;
+	background: white;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+#empty {
+	width: 1200px;
+	height: 400px;
+	background: white;
+	margin-top: 40px;
+	text-align: center;
+}
+
+#sch {
+	width: 400px;
+	height: auto;
+	text-align: center;
+	font-size: 24pt;
+	border: 1px solid black;
+	backgoround: lightgret;
+	margin-left: 398px;
+}
+
+#sch_bt a:link {
+	text-decoration: none;
+	color: black;
+}
+
+#sch_bt a:hover {
+	text-decoration: none;
+	color: blue;
+}

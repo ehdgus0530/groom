@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+#wrap {
+	background: #DBEEF4;
+	padding: 10px;
+	width: 1200px;
+	height: auto;
+	outline: 1px solid;
+}
+
+.title {
+	width: 400px;
+	height: auto;
+	font-size: 32pt;
+	font-weight: bold;
+	text-align: center;
+	outline: 1px solid black;
+	margin: 50px;
+	margin-left: 400px;
+}
+
+.sub_title {
+	width: 600px;
+	height: auto;
+	font-size: 20pt;
+	font-weight: bold;
+	margin: 0 auto;
+	outline: 1px solid;
+	text-align: center;
+}
+
+.id_box {
+	width: 500px;
+	height: auto;
+	font-size: 20pt;
+	font-weight: bold;
+	outline: 1px solid black;
+	margin-bottom: 50px;
+	margin-left: 345px;
+}
+
+.button_box {
+	width: 176px;
+	height: 40px;
+	margin-left: 523px;
+}
+
+.button {
+	width: 78px;
+	height: auto;
+	font-size: 20pt;
+	background: white;
+	outline: 1px solid black;
+	text-align: center;
+	float: left;
+	margin-right: 10px;
+}
+
+.button2 {
+	width: 180px;
+	height: auto;
+	font-size: 16pt;
+	background: white;
+	outline: 1px solid black;
+	text-align: center;
+	float: left;
+	margin-right: 10px;
+}
+
+.title td {
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+.text {
+	width: 600px;
+	height: auto;
+	background: white;
+	outline: 1px solid white;
+	margin-left: 300px;
+	margin-bottom: 50px;
+}

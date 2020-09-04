@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+#menu_bar {
+	height: 50px;
+	width: 1200px;
+	font-size: 20pt;
+	margin-bottom: 50px;
+}
+
+#air {
+	text-align: center;
+	background: linear-gradient(to left, lightblue 50%, white 100%);
+}
+
+#air a:link {
+	text-decoration: none;
+	color: black;
+}
+
+#air a:hover {
+	text-decoration: none;
+	color: blue;
+}
+
+#hotel {
+	text-align: center;
+	background: linear-gradient(to left, red 50%, white 100%);
+}
+
+#hotel a:link {
+	text-decoration: none;
+	color: black;
+}
+
+#hotel a:hover {
+	text-decoration: none;
+	color: blue;
+}
+
+#rent {
+	text-align: center;
+	background: linear-gradient(to left, lightyellow 50%, white 100%);
+}
+
+#rent a:link {
+	text-decoration: none;
+	color: black;
+}
+
+#rent a:hover {
+	text-decoration: none;
+	color: blue;
+}

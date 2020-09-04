@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+#wrap {
+	margin: 0 auto;
+	width: 1200px;
+	height: 1000px;
+	border: 1px solid black;
+	background: #DBEEF4;
+}
+
+#header {
+	width: 1200px;
+	height: 100px;
+	text-align: center;
+	font-size: 32pt;
+	font-weight: bold;
+	padding-top: 70px;
+	padding-bottom: 30px;
+}
+
+#sch {
+	width: 150px;
+	height: 40px;
+	margin-top: 50px;
+	margin-left: 525px;
+	background: lightblue;
+	text-align: center;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+#sch a:link {
+	text-decoration: none;
+}
+
+#sch a:link {
+	text-decoration: none;
+	color: blue;
+}

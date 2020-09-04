@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+#wrap {
+	width: 1200px;
+	height: auto;
+	background: #DBEEF4;
+	margin: 0 auto;
+}
+
+#title {
+	position: relative;
+	font-size: 32pt;
+	text-align: center;
+	top: 50px;
+	font-weight: 600;
+}
+
+#middle {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 1000px;
+	height: 1030px;
+	background: white;
+}
+
+#mt {
+	height: 60px;
+	padding-top: 50px;
+}
+
+#ct {
+	position: relative;
+	margin-left: 40px;
+	width: 170px;
+	height: 40px;
+	font-size: 20pt;
+	text-align: center;
+	float: left;
+	border: 1px solid black;
+}
+
+#tt {
+	position: relative;
+	width: 700px;
+	height: 40px;
+	font-size: 20pt;
+	float: left;
+	margin-left: 20px;
+	padding-left: 10px;
+	border: 1px solid black;
+}
+
+#tn {
+	position: relative;
+	left: 40px;
+	top: 40px;
+	width: 890px;
+	height: 600px;
+	font-size: 18pt;
+	padding: 15px;
+	border: 1px solid black;
+}
+
+#tag {
+	border: 1px solid black;
+	width: 920px;
+	height: 60px;
+	left: 40px;
+	position: relative;
+	top: 100px;
+}
+
+#save {
+	position: relative;
+	top: 140px;
+	right: 40px;
+	width: 150px;
+	height: 50px;
+	float: right;
+	font-size: 20pt;
+}
+
+#del {
+	position: relative;
+	top: 140px;
+	right: 40px;
+	width: 150px;
+	height: 50px;
+	float: right;
+	margin-left: 20px;
+	font-size: 20pt;
+}
+
+#foot {
+	height: 100px;
+}

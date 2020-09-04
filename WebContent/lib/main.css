@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+#header {
+	font-weight:bold;
+	text-align:right;
+}
+
+#M_button {
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 50px;
+	list-style-type: none;
+	padding: 0;
+}
+
+#M_button li {
+	float: left;
+	position: relative;
+	padding: 0;
+	width: 120px;
+	height: 50px;
+	line-height: 40px;
+	font-size: 20pt;
+}
+
+#M_button li a {
+	display: block;
+	font-weight: 600;
+	font-size: 10px;
+	padding: 5px 25px;
+	color: red;
+	text-decoration: none;
+}
+
+#M_button li a:hover {
+	color: black;
+}
+
+#M_button li ul {
+	opacity: 0;
+	position: absolute;
+	left: 20px;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#M_button li:hover ul {
+	opacity: 1;
+}
+
+#M_button li ul li {
+	position: static;
+	height: 50px;
+	line-height: 0;
+	background: none;
+}
+
+#M_button li:hover ul li {
+	height: 30px;
+	line-height: 30px;
+	padding: 10px;
+}
+
+#M_planner {
+	width: 1200px;
+	height: 450px;
+	position: relative;
+	text-align: center;
+	font-size: 40pt;
+	line-height: 450px;
+	vertical-align: middle;
+	text-decoration: none;
+	font-weight: bold;
+	color: #4BACC6;
+}
+
+#M_planner:hover {
+	cursor: pointer;
+}
+
+#M_title {
+	width: 1200px;
+	height: 100px;
+	position: relative;
+	font-size: 32pt;
+	font-weight: bold;
+	text-align: center;
+	background: #DBEEF4;
+	line-height: 90px;
+	vertical-align: middle;
+}
+
+#M_travel {
+	width: 1200px;
+	height: 450px;
+	position: realative;
+	text-align: center;
+	background: #4BACC6;
+	font-size: 40pt;
+	line-height: 450px;
+	vertical-align: middle;
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+}
+
+#M_travel:hover {
+	cursor: pointer;
+}
+
+.fullscreen {
+	outline: 1px solid black;
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.t_cover {
+	position: absolute;
+	width: 1200px;
+	height: 450px;
+	background: white;
+	background: rgba(255, 255, 255, 0.6);
+	top: 9px;
+	text-align: center;
+}
+
+.t_text {
+	outline: white;
+	margin-top: 170px;
+	width: 600px;
+	height: auto;
+	margin-left: 300px;
+	font-size: 32pt;
+	font-weight: bold;
+	text-shadow: 2px 2px 1px grey;
+}
+
+.b_cover {
+	position: absolute;
+	width: 1200px;
+	top: 0;
+	margin-top: 558px;
+	background: white;
+	background: rgba(255, 255, 255, 0.6);
+	height: 450px;
+	text-align: center;
+}
+
+.b_text {
+	outline: white;
+	margin-top: 170px;
+	width: 700px;
+	height: auto;
+	margin-left: 250px;
+	font-size: 32pt;
+	font-weight: bold;
+	text-shadow: 2px 2px 1px grey;
+}

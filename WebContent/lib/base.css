@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+#wrap {
+	width: 1200px;
+	height: auto;
+	background: #DBEEF4;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+
+#title {
+	width: 600px;
+	background: white;
+	outline: 1px solid lightskyblue;
+	top: 50px;
+	margin-left: 300px;
+	position: relative;
+	text-align: center;
+	font-size: 32pt;
+	font-weight: bold;
+}
+
+#middle {
+	width: 1100px;
+	height: 700px;
+	background: white;
+	outline: 1px solid lightskyblue;
+	position: relative;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+#foot {
+	width: 1100px;
+	height: 70px;
+	margin-top: 40px;
+	margin-left: 50px;
+	margin-bottom: 100px;
+	text-align: center;
+	outline: 1px solid lightblue;
+	background: white;
+}

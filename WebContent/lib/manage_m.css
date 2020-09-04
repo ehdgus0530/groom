@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+#wrap {
+	width: 1200px;
+	height: auto;
+	background: #DBEEF4;
+	margin: 0 auto;
+}
+
+#title {
+	position: relative;
+	font-size: 32pt;
+	text-align: center;
+	top: 50px;
+	font-weight: 600;
+}
+
+#home {
+	position: absolute;
+	width: 100px;
+	height: 60px;
+	margin-left: 1000px;
+}
+
+#middle {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 150px;
+	width: 1000px;
+	height: 930px;
+	background: white;
+}
+
+#mt {
+	position: absolute;
+	margin-top: 80px;
+	margin-left: 100px;
+	width: 500px;
+	height: 60px;
+}
+
+#serch_m {
+	font-size: 16pt;
+	width: 200px;
+	height: 40px;
+}
+
+#serch {
+	position: absolute;
+	left: 220px;
+	width: 60px;
+	height: 46px;
+}
+
+#foot {
+	height: 100px;
+}
+
+#nn {
+	width: 1000px;
+	height: 30px;
+}
+
+#nn th {
+	padding-top: 30px;
+	width: 164px;
+}

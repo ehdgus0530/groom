@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+#rent1 {
+	width: 1200px;
+	height: auto;
+	position: relative;
+	margin-bottom: 50px;
+}
+
+#rent_res {
+	width: 1200px;
+	height: 800px;
+	margin-bottom: 50px;
+}
+
+#r_title {
+	width: 1200px;
+	height: 100px;
+	margin-top: 70px;
+	margin-bottom: 30px;
+	text-align: center;
+	font-size: 32pt;
+	font-weight: bold;
+}
+
+#res_menu {
+	width: 1200px;
+}
+
+#button {
+	text-align: center;
+	width: 1200px;
+	font-size: 20pt;
+}
+
+#button span {
+	border: 1px solid black;
+	padding: 10px;
+}
+
+#button span a:link {
+	text-decoration: none;
+	color: black;
+}
+
+#button span a:hover {
+	text-decoration: none;
+	color: blue;
+}
+
+table tr td {
+	border: 1px solid black;
+	text-align: center;
+}
+
+.res table tr td {
+	width: 1200px;
+	height: 50px;
+}

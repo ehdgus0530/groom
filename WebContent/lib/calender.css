@@ -1,0 +1,88 @@
+@charset "UTF-8";
+
+#c_wrap {
+	width: 1200px;
+	height: auto;
+	margin: 0 auto;
+	background: #DBEEF4;
+}
+
+#c_header {
+	font-size: 32pt;
+	width: 1200px;
+	height: auto;
+	text-align: center;
+}
+
+#c_title {
+	width: 1200px;
+	text-align: right;
+}
+
+#calender {
+	width: 1200px;
+	height: auto;
+}
+
+#c_button {
+	width: 1200px;
+	height: 50px;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 24pt;
+	margin-left: 345px;
+}
+
+#c_button a:link {
+	text-decoration: none;
+	color: black;
+}
+
+#c_button a:hover {
+	text-decoration: none;
+	color: blue;
+}
+
+#c_a {
+	width: 250px;
+	float: left;
+	outline: 1px solid black;
+	margin-right: 10px;
+}
+
+#c_b {
+	width: 250px;
+	float: left;
+	outline: 1px solid black;
+}
+
+#cs_button {
+	width: 1200px;
+	height: 80px;
+	margin-top: 50px;
+}
+
+#cs_button div {
+	width: 200px;
+	height: 50px;
+	margin: 0 auto;
+	text-align: center;
+	border: 1px solid black;
+}
+
+#cs_button a:link {
+	text-decoration: none;
+	font-size: 24pt;
+	color: black;
+}
+
+#calender tabel {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#cs_button a:hover {
+	text-decoration: none;
+	font-size: 24pt;
+	color: blue;
+}

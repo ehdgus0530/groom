@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+#wrap {
+	width: 1200px;
+	height: auto;
+	background: #DBEEF4;
+	margin: 0 auto;
+}
+
+#title {
+	position: relative;
+	font-size: 32pt;
+	text-align: center;
+	top: 50px;
+	font-weight: 600;
+}
+
+#home {
+	position: absolute;
+	width: 80px;
+	height: 40px;
+	margin-top: 20px;
+	margin-left: 1000px;
+}
+
+#middle {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 100px;
+	width: 1000px;
+	height: 930px;
+	background: white;
+}
+
+#middle_t {
+	width: 1000px;
+	height: 850px;
+}
+
+#note {
+	height: 100px;
+	position: relative;
+}
+
+#note th {
+	font-size: 18pt;
+	padding-left: 20px;
+	padding-right: 30px;
+	height: 100px;
+}
+
+#n1 {
+	width: auto;
+}
+
+#n2 {
+	width: 100px;
+}
+
+#n3 {
+	width: 100px;
+}
+
+#tt {
+	height: 100px;
+}
+
+#tt td {
+	font-size: 16pt;
+	height: 100px;
+}
+
+#t1 {
+	width: auto;
+	padding-left: 50px;
+}
+#t2{
+	
+}
+
+#t3 {
+	width: 100px;
+	padding-left: 40px;
+}
+
+#t4 {
+	width: 100px;
+	padding-left: 15px;
+}
+
+#nextp {
+	width: 300px;
+	text-align:center;
+	margin:0 auto;
+	font-size: 18pt;
+}
+
+#qa_write {
+	float: right;
+	margin-right: 50px;
+	width: 150px;
+	height: 50px;
+}
+
+#foot {
+	height: 100px;
+}

@@ -1,0 +1,169 @@
+@charset "UTF-8";
+
+#wrap {
+	width: 1200px;
+	height: auto;
+	background: #DBEEF4;
+	margin: 0 auto;
+}
+
+#title {
+	position: relative;
+	font-size: 32pt;
+	text-align: center;
+	top: 50px;
+	font-weight: 600;
+}
+
+#main {
+	position: absolute;
+	width: 130px;
+	height: 60px;
+	margin-left: 60px;
+}
+
+#save {
+	position: absolute;
+	width: 130px;
+	height: 60px;
+	margin-left: 950px;
+}
+
+#middle {
+	position: relative;
+	margin: 0 auto;
+	margin-top: 150px;
+	width: 1000px;
+	height: 750px;
+}
+
+#m1 {
+	width: 1000px;
+	height: 40px;
+	margin-bottom: 30px;
+}
+
+#m1a {
+	height: 40px;
+	width: 130px;
+	text-align: center;
+	padding-top: 10px;
+	float: left;
+	margin-left: 290px;
+	background: white;
+	font-size: 17pt;
+	border: 1px solid black;
+}
+#m1b {
+	height: 40px;
+	width: 540px;
+	text-align: center;
+	padding-top: 10px;
+	float: left;
+	margin-left: 20px;
+	background: white;
+	font-size: 17pt;
+	border: 1px solid black;
+}
+
+#m2a {
+	height: 550px;
+	width: 250px;
+	text-align: center;
+	float: left;
+	margin-left: 20px;
+	background: white;
+	font-size: 17pt;
+	border: 1px solid black;
+}
+
+#m2b {
+	height: 550px;
+	width: 130px;
+	text-align: center;
+	float: left;
+	margin-left: 18px;
+	background: white;
+	font-size: 17pt;
+	border: 1px solid black;
+}
+
+#m2c {
+	height: 550px;
+	width: 540px;
+	text-align: center;
+	float: left;
+	margin-left: 20px;
+	background: white;
+	font-size: 17pt;
+	border: 1px solid black;
+}
+
+#m3 {
+	width: 1000px;
+	height: 30px;
+	font-size: 17pt;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#bucketf {
+	width:1000px;
+	height:30px;
+	margin-left:20px;
+	margin-bottom:10px;
+}
+#bucketf input {
+	background: white;
+}
+
+#bucket_list {
+	width:1000px;
+	height:auto;
+	position:absolute;
+}
+
+#bk_title {
+	height: 30px;
+	width: 252px;
+	text-align: center;
+	float: left;
+	background: white;
+	font-size: 17pt;
+	border: 1px solid black;
+}
+
+#bucketf div {
+	height: 30px;
+	width: 130px;
+	text-align: center;
+	float: left;
+	margin-left: 18px;
+	background: white;
+	font-size: 17pt;
+	border: 1px solid black;
+}
+#bk_check {
+	height: 25px;
+	width: 130px;
+}
+
+#bk_content {
+	height: 30px;
+	width: 540px;
+	text-align: center;
+	float: left;
+	margin-left: 20px;
+	background: white;
+	font-size: 17pt;
+	border: 1px solid black;
+}
+
+#foot {
+	position:relative;
+	height: 100px;
+}
+
+input:focus {
+	outline: none;
+}

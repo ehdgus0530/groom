@@ -1,0 +1,108 @@
+@charset "UTF-8";
+
+#wrap {
+	width: 1200px;
+	height: 1000px;
+	background: #DBEEF4;
+	margin: 0 auto;
+}
+
+#info_title {
+	position: relative;
+	font-size: 32pt;
+	text-align: center;
+	top: 50px;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+#info_content {
+	width: 600px;
+	height: auto;
+	margin-left: 325px;
+	margin-top: 135px;
+	text-align: center;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+table tr td {
+	border: 1px solid black;
+	width: 200px;
+	height: 50px;
+}
+
+#button {
+	width: 500px;
+	height: auto;
+	margin-top: 50px;
+}
+
+#base_insert:link {
+	outline: 1px solid;
+	width: 160px;
+	height: 30px;
+	margin-left: 155px;
+	margin-right: 10px;
+	float: left;
+	
+}
+
+#base_insert a{
+	outline: 1px solid;
+	width: 160px;
+	height: 30px;
+	margin-left: 155px;
+	margin-right: 10px;
+	float: left;
+	text-decoration: none;
+    color: black;
+}
+
+#pw_insert a:link {
+	outline: 1px solid;
+	width: 160px;
+	height: 30px;
+	margin-left: 155px;
+	margin-right: 10px;
+	float: left;
+}
+
+#pw_insert a {
+	outline: 1px solid;
+	width: 160px;
+	height: 30px;
+	margin-left: 155px;
+	margin-right: 10px;
+	float: left;
+	text-decoration: none;
+    color: black;
+}
+
+#home_button {
+	width: 70px;
+	height: auto;
+	outline: 1px solid;
+	position: absolute;
+	float: right;
+	margin-left: 860px;
+	margin-top: 35px;
+	text-align: center;
+}
+
+#save {
+	outline: 1px solid;
+	width: 160px;
+	height: 30px;
+	margin-left: 155px;
+	margin-right: 10px;
+	float: left;
+}
+
+#back {
+	outline: 1px solid;
+	width: 160px;
+	height: 30px;
+	margin-right: 10px;
+	float: left;
+}
