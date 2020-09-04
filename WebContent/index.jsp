@@ -25,7 +25,7 @@
 		onMouseOver='plan_on()' onMouseOut='plan_out()'>
 			Planner
 		</div>
-		<div id=M_title>삶을 꾸며가는 Grooming에 오신것을 환영합니다.</div>
+		<div id=M_title>삶을 꾸며가는 Grooming에 오신것을 환영합니다</div>
 		<div id=M_travel onclick='user_tk("${sessionScope.id}")'
 		onMouseOver='travel_on()' onMouseOut='travel_out()'>
 			Travel
