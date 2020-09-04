@@ -15,3 +15,7 @@ function saves() {
 		fm.submit();
 	}
 }
+
+function home(){
+	location.href='index.jsp';
+}
