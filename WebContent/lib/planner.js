@@ -25,11 +25,12 @@ function scd_input(t) {
 }
 
 //캘린더  구역
-function calender() {
-	location.href = "plan.pl?kind=calender";
+function calendar() {
+	location.href = "plan.pl?kind=calendar";
 }
 
 function home() {
+	location.href="./index.jsp";
 	location.href="index.jsp";
 }
 
